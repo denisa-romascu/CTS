@@ -1,6 +1,7 @@
 package ro.ase.cts.clase.readers;
 
 import ro.ase.cts.clase.Angajat;
+import ro.ase.cts.clase.Aplicant;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,12 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AngajatiReader {
+public class AngajatiReader implements Readable{
 
-    public static List<Angajat> readAngajati(String file) throws FileNotFoundException {
-        Scanner input2 = new Scanner(new File(file));
+    @Override
+    public List<Aplicant> readAplicanti(String numeFisier) throws FileNotFoundException {
+        Scanner input2 = new Scanner(new File(numeFisier));
         input2.useDelimiter(",");
-        List<Angajat> angajati = new ArrayList<Angajat>();
+        List<Aplicant> angajati = new ArrayList<Aplicant>();
 
         while (input2.hasNext()) {
             String nume = input2.next();
@@ -32,5 +34,4 @@ public class AngajatiReader {
         input2.close();
         return angajati;
     }
-
 }
