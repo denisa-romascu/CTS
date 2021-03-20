@@ -1,4 +1,5 @@
 package ro.ase.cts.program;
+import ro.ase.cts.clase.Adresa;
 import ro.ase.cts.clase.Parlament;
 import ro.ase.cts.clase.ParlamentLazy;
 
@@ -27,5 +28,14 @@ public class Main {
         System.out.println("========================");
         System.out.println(parlamentLazy1.toString());
         System.out.println(parlamentLazy2.toString());
+
+        Adresa adresa1 = Adresa.getInstance("Victoriei",10.5f,2);
+        Adresa adresa2 = Adresa.getInstance("Dudesti",4.6f,5);
+
+        System.out.println("=============ADRESA===========");
+        System.out.println(adresa1.toString());
+        System.out.println(adresa2.toString());
+
+
     }
 }
