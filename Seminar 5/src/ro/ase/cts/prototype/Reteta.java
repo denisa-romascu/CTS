@@ -1,7 +1,9 @@
+package ro.ase.cts.prototype;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reteta implements  AbstractPrototype{
+public class Reteta implements AbstractPrototype {
     private List<String> denumireSolutii;
     private List<Integer> cantitati;
 
@@ -44,7 +46,7 @@ public class Reteta implements  AbstractPrototype{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Reteta{");
+        final StringBuilder sb = new StringBuilder("ro.ase.cts.prototype.Reteta{");
         sb.append("denumireSolutii=").append(denumireSolutii);
         sb.append(", cantitati=").append(cantitati);
         sb.append('}');
