@@ -1,9 +1,9 @@
-package program;
+package program.adapter;
 
-import clase.AdapterLeasingClase;
-import clase.AdapterLeasingObiect;
-import clase.Creditable;
-import clase.Leasing;
+import clase.adapter.AdapterLeasingClase;
+import clase.adapter.AdapterLeasingObiect;
+import clase.adapter.Creditable;
+import clase.adapter.Leasing;
 
 public class Main {
     public static void printeazaInformatiiClient(Creditable credit){

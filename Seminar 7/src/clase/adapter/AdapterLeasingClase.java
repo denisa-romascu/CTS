@@ -1,4 +1,4 @@
-package clase;
+package clase.adapter;
 
 public class AdapterLeasingClase extends Leasing implements Creditable{
     public AdapterLeasingClase(String numeClient, int suma) {

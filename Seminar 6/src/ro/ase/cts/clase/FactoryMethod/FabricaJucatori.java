@@ -1,6 +1,4 @@
-package ro.ase.cts.clase;
-
-import ro.ase.cts.clase.Jucator;
+package ro.ase.cts.clase.FactoryMethod;
 
 public interface FabricaJucatori {
     public Jucator creazaJucator(String nume, int nrTricou);

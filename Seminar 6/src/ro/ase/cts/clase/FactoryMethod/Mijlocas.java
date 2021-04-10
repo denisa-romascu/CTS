@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.clase.FactoryMethod;
 
 public class Mijlocas extends Jucator{
     public Mijlocas(String nume, int nrTricou) {

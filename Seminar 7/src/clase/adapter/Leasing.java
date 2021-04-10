@@ -1,4 +1,4 @@
-package clase;
+package clase.adapter;
 
 public class Leasing {
     private String numeClient;

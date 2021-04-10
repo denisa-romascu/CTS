@@ -1,4 +1,4 @@
-package clase;
+package clase.adapter;
 
 public class AdapterLeasingObiect implements Creditable{
     private Leasing leasing;

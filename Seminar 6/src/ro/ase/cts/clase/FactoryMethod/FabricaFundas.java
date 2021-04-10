@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.clase.FactoryMethod;
 
 public class FabricaFundas implements FabricaJucatori {
     @Override
