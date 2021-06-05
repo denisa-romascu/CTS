@@ -2,6 +2,7 @@ package teste;
 
 import clase.Grupa;
 import mock.StudentDummy;
+import mock.StudentStub;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -39,5 +40,14 @@ public class GrupaTestWithMocks {
     public void adaugaBounderyStudentExceptie(){
         StudentDummy studentDummy = new StudentDummy();
         grupa.adaugaStudent(studentDummy);
+    }
+
+
+    @Test
+    public void testGetPromovabilitate(){
+        Grupa grupa = new Grupa(1088);
+        StudentStub studentStub = new StudentStub();
+        grupa.adaugaStudent(studentStub);
+        assertEquals(0,grupa.getPromovabilitate(),0.01);
     }
 }

@@ -1,13 +1,16 @@
 package teste;
 
+import categories.TesteRight;
+import categories.TesteUrgente;
 import clase.Grupa;
 import org.junit.Test;
-
+import org.junit.experimental.categories.Category;
 import static org.junit.Assert.*;
 
 public class GrupaTest {
 
     @Test
+    @Category(TesteRight.class)
     public void testConstructorRight() {
         Grupa grupa = new Grupa(1086);
         assertEquals(1086, grupa.getNrGrupa());
@@ -41,6 +44,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorRange() {
         Grupa grupa = new Grupa(1001);
         assertEquals(1001, grupa.getNrGrupa());
