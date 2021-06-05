@@ -53,5 +53,4 @@ public class GrupaTest {
         Grupa grupa = new Grupa(1041);
         assertNotNull(grupa.getStudenti());
     }
-
 }
